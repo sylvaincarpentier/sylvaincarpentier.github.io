@@ -8,51 +8,120 @@
 <style>
 
 body {
-    max-width: 850px;
+    max-width: 780px;
     margin: auto;
-    padding: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
+    padding: 45px 35px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.65;
     color: #222;
 }
 
+
 h1 {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 42px;
+    font-size: 44px;
+    font-weight: normal;
     margin-bottom: 5px;
 }
 
-h2 {
-    font-family: Georgia, "Times New Roman", serif;
-    margin-top: 40px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 5px;
+
+.subtitle {
+    color: #555;
+    font-size: 18px;
+    margin-top: 0;
 }
 
+
+.interests {
+    color: #666;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+
 nav {
-    margin: 25px 0 40px 0;
+    margin: 35px 0 45px 0;
     font-size: 18px;
 }
+
 
 nav a {
     color: #333;
     text-decoration: none;
 }
 
+
 nav a:hover {
     text-decoration: underline;
 }
 
-.profile {
-    width: 300px;
-    display: block;
-    margin: 30px auto;
+
+.profile-section {
+    display: flex;
+    gap: 35px;
+    align-items: center;
 }
 
-.subtitle {
-    color: #555;
-    font-size: 18px;
+
+.profile {
+    width: 230px;
 }
+
+
+.intro {
+    flex: 1;
+}
+
+
+h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: normal;
+    font-size: 28px;
+    margin-top: 50px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 6px;
+}
+
+
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+a {
+    color: #0056a6;
+    text-decoration: none;
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.news {
+    margin-bottom: 15px;
+}
+
+
+.date {
+    color: #666;
+}
+
+
+@media (max-width: 650px) {
+
+.profile-section {
+    display: block;
+}
+
+.profile {
+    display: block;
+    margin: 25px auto;
+}
+
+}
+
 
 </style>
 
@@ -64,10 +133,17 @@ nav a:hover {
 
 <h1>Sylvain Carpentier</h1>
 
+
 <p class="subtitle">
 BK21 Postdoctoral Fellow<br>
 Seoul National University
 </p>
+
+
+<p class="interests">
+Integrable Systems · Mathematical Physics · Algebra
+</p>
+
 
 
 <nav>
@@ -79,19 +155,13 @@ Seoul National University
 </nav>
 
 
+
+<div class="profile-section">
+
 <img src="profile.jpg" class="profile">
 
 
-<p>
-Email:
-<a href="mailto:sylcar@snu.ac.kr">
-sylcar@snu.ac.kr
-</a>
-</p>
-
-
-<h2>About</h2>
-
+<div class="intro">
 
 <p>
 I am currently a BK21 Postdoctoral Fellow at Seoul National University.
@@ -105,30 +175,55 @@ I received my PhD from MIT in 2017.
 
 
 <p>
-My research lies at the interface of mathematical physics, algebra,
-and integrable systems. More specifically, I work on Lax operators,
-W-algebras, Hamiltonian structures, and quantization of integrable
-systems.
+My research is in mathematical physics, with a focus on integrable
+systems and their underlying algebraic structures. I am particularly
+interested in Lax operators, W-algebras, Hamiltonian structures,
+and quantization of integrable systems.
 </p>
+
+</div>
+
+</div>
+
+
+
+<h2>News</h2>
+
+
+<p class="news">
+<span class="date">July 2026</span><br>
+New preprint:
+<i>
+Integrable Volterra hierarchies over nonabelian algebras
+</i>
+with J.P. Wang and A.V. Mikhailov.
+</p>
+
+
+<p class="news">
+<span class="date">June 2026</span><br>
+New preprint:
+<i>
+Arithmetic supports of Lax difference hierarchies
+</i>.
+</p>
+
+
+
+<h2>Beyond Mathematics</h2>
 
 
 <p>
 An interview with the Simons Society of Fellows discussing my research
-and the connections between mathematics and creativity can be found
+and the connections between mathematics, creativity, and music can be
+found
 <a href="https://www.simonsfoundation.org/2021/04/27/finding-beauty-at-the-piano-and-elegance-in-mathematics/">
 here
 </a>.
 </p>
 
 
-<h2>Links</h2>
-
-<p>
-<a href="https://arxiv.org/a/carpentier_s_1.html">
-arXiv
-</a>
-</p>
-
 
 </body>
+
 </html>
